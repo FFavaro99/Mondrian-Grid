@@ -149,3 +149,21 @@ div.r20 {
     grid-column-end: 7;
     border-bottom: none;
 }
+
+
+@media (max-width: 30rem) and (orientation: portrait) {
+    .grid{
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .grid div {
+        border-width: 6px !important;
+    }
+}
+
+@media (max-height: 30rem) and (orientation: landscape) {
+    .grid div {
+        border-width: 6px !important;
+    }
+}
