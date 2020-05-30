@@ -3,25 +3,27 @@
 function switchColor() {
     let className = this.classList[1];
 
-    if (className == 'white'){
-        this.classList.remove('white');
-        this.classList.add('yellow');
-    }
-    else if (className == 'yellow'){
-        this.classList.remove('yellow');
-        this.classList.add('red');
-    }
-    else if (className == 'red'){
-        this.classList.remove('red');
-        this.classList.add('black');
-    }
-    else if (className == 'black'){
-        this.classList.remove('black');
-        this.classList.add('blue')
-    }
-    else {
-        this.classList.remove('blue');
-        this.classList.add('white');
+
+    switch (className){
+        case 'white':
+            this.classList.remove('white');
+            this.classList.add('yellow');
+            break;
+        case 'yellow':
+            this.classList.remove('yellow');
+            this.classList.add('red');
+            break;
+        case 'red':
+            this.classList.remove('red');
+            this.classList.add('black');
+            break;
+        case 'black':
+            this.classList.remove('black');
+            this.classList.add('blue');
+            break;
+        default:
+            this.classList.remove('blue');
+            this.classList.add('white');
     }
 }
 
